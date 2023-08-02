@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="style2sheet">
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><i class='bx bxs-heart-circle' style='color: #e4e4e4;' ></i> Only For You</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul> 
+    </header>
+    <section>
+        <img src="moon8.png" id="Moon">
+        <h2 id="text">Happy Birthday!</h2>
+        <a href="#sec" id="btn">Scroll Down</a>
+        <img src="Gunung7.png" id="Gunung">
+        <img src="road19.png" id="Jalan">
+    </section>
+        <div class="sec" id="sec">
+            <h2>Happy Birthday Didi!!!<i class='bx bxs-party' ></i><i class='bx bxs-party' ></i></h2>
+            <img class="gif" src="Happy Birthday 2.gif">
+            <p>Wish You All The Best!!! May happiness surround you always! May your wishes come true!<br><br>
+
+            Terima kasih atas segala bantuan, kebaikan dan kata kata semangat dari Didi (sangat berarti), awalnya tidak menyangka Didi akan berkata seperti itu, namun sangat berterima kasih🙏🙏🙏.<br><br> 
+            Terima kasih Didi telah menjadi teman saya dan menerima saya. Terima kasih juga atas segala yang telah Didi lewati/alami bersama saya.
+            Didi adalah teman yang sangat baik bagi saya. Pada awalnya tidak menyangka akan berteman dengan Didi, dan ternyata setelah berteman, terdapat banyak hal yang saya tidak sangka dari Didi seperti pandai menggambar (gambarnya bagusss👍👍👍👍👍👍) dll.
+            Semoga Didi dapat mencapai impian Didi. Arsitektur? Semoga Didi dapat menjadi/berprofesi sebagai profesi yang Didi inginkan. Maaf bila saya pernah melakukan hal yang menyinggung didi ataupun hal hal yang membuat Didi tidak nyaman🫂.
+            Semoga kita dapat menjadi teman dalam jangka waktu lebih lama lagi (sangat berharap). Sekali lagi, Happy Birthday Didi!!!🎊🎊🎊🎊</p>
+            <br>
+            <audio controls autoplay src="Happy Birthday 3.mp3"></audio>
+        </div>
+
+
+    <script>
+        let Moon = document.getElementById('Moon');
+        let Gunung = document.getElementById('Gunung');
+        let Jalan = document.getElementById('Jalan');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.getElementById('header')
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            Moon.style.top = value * 0.25 + 'px';
+            Gunung.style.top = value * 0.5 + 'px';
+            Jalan.style.top = value * 4 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
